@@ -1,3 +1,4 @@
+
 /**
  * Purpose : Implementation of Serialization and Singleton
  * 
@@ -5,6 +6,7 @@
  * @version 1.0
  * @since 24-03-2018
  */
+
 package com.bridgelab.designpattern.creationaldesignpatterns;
 
 import java.io.FileInputStream;

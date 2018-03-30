@@ -20,8 +20,10 @@ public class CliniqueManagement {
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		Utility utility = new Utility();
+
 		String pathPatients = "patientsList.json";
 		String pathDoctors = "doctorsList.json";
+
 		List<Patient> patientsList = new ArrayList<>();
 		List<Doctor> doctorsList = new ArrayList<>();
 		int choice;

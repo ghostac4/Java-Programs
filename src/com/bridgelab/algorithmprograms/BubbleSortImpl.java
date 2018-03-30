@@ -14,6 +14,7 @@ public class BubbleSortImpl {
 
 	public static void main(String[] args) {
 		String path = "intList.txt";
+
 		String separator = " ";
 		
 		String[] intString = Utility.readStringsFromFile(path, separator);

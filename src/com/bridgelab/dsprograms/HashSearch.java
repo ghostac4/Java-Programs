@@ -18,6 +18,7 @@ public class HashSearch {
 	public static void main(String[] args) {
 		Utility utility = new Utility();
 		String path = "outputList.txt";
+
 		int choice;
 		Map<Integer, OrderedList<Integer>> map = new LinkedHashMap<>();
 

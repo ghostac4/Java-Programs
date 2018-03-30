@@ -7,7 +7,10 @@
  */
 package com.bridgelab.ooprograms;
 
+<<<<<<< HEAD
 import java.util.StringJoiner;
+=======
+>>>>>>> 6ff2e49dee84fda0207c9e636b33c60a3647c493
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -37,7 +40,6 @@ public class RegularExpression {
 		stringJoiner.add(dateSplit[2]);
 		
 		date = stringJoiner.toString();
-		
 		String[] replace = { name, fullName, mobileNumber, date };
 		String output = input;
 		for (int i = 0; i < patterns.length; i++) {

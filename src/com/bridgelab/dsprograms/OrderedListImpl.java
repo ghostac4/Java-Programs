@@ -15,6 +15,7 @@ public class OrderedListImpl {
 	public static void main(String[] args) {
 		Utility utility = new Utility();
 		String path = "intList.txt";
+
 		String separator = " ";
 		String[] intStringList = Utility.readStringsFromFile(path, separator);
 		Integer[] intList = new Integer[intStringList.length];
@@ -41,13 +42,13 @@ public class OrderedListImpl {
 		System.out.print("\n");
 		olist.display();
 		String wordList = "";
-		
+
 		int size = olist.size();
 		for (int i = 0; i < size; i++)
 			wordList = wordList + olist.pop() + " ";
-		
+
 		//System.out.print("\n" + wordList);
-		
+
 		//Utility.writeToFile(wordList, path);
 	}
 

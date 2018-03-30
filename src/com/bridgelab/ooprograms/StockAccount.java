@@ -25,6 +25,7 @@ public class StockAccount {
 
 	private float amount;
 	private String path="";
+
 	private UnorderedList<CompanyShares> companySharesInAccount;
 	private Queue<String> dateTime;
 	private Stack<Transaction> transactionStack;
@@ -85,7 +86,6 @@ public class StockAccount {
 						myShares.setSymbol(symbol);
 						companySharesInAccount.add(myShares);
 					}
-					
 					SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 					Date date = new Date();
 					dateTime.enqueue(formatter.format(date));

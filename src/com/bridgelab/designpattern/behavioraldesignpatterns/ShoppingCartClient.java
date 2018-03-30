@@ -1,3 +1,4 @@
+
 /**
  * Purpose : Implementation of Visitor Design Pattern
  * 
@@ -5,6 +6,7 @@
  * @version 1.0
  * @since 24-03-2018
  */
+
 package com.bridgelab.designpattern.behavioraldesignpatterns;
 
 public class ShoppingCartClient {

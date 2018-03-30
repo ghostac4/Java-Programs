@@ -1,3 +1,4 @@
+
 /**
  * Purpose : Implementation of Adapter Design pattern
  * 
@@ -5,6 +6,7 @@
  * @version 1.0
  * @since 23-03-2018
  */
+
 package com.bridgelab.designpattern.structuraldesignpatterns;
 
 public class AdapterPatternTest {

@@ -70,12 +70,13 @@ public class Calender {
 					break outer;
 			}
 		}
+
 		for (int i = 0; i < 6; i++){
 			for (int j = 0; j < 7; j++)
 				System.out.print(calender[i][j] + " ");
 		System.out.print("\n");
 		}	
-		
+
 		Queue<Queue<WeekDay>> weekQueue = new Queue<>();
 		for (int i = 0; i < 6; i++) {
 			Queue<WeekDay> weekDayQueue = new Queue<>();

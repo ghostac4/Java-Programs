@@ -54,11 +54,16 @@ public class Utility {
 
 	/**
 	 * function to detect if the given strings are anagram or not
+<<<<<<< HEAD
 	 * 
 	 * @param string1
 	 *            is a string
 	 * @param string2
 	 *            is a string
+=======
+	 * @param string1 is a string
+	 * @param string2 is a string
+>>>>>>> 6ff2e49dee84fda0207c9e636b33c60a3647c493
 	 * @return true if strings are anagram else false
 	 * 
 	 */
@@ -92,6 +97,7 @@ public class Utility {
 			return false;
 		}
 	}
+
 
 	/**
 	 * This method returns list of integers upto given range
@@ -381,7 +387,6 @@ public class Utility {
 			if (i == 2) {
 				list.add(10);
 			}
-
 			if (!list.contains(randomInt)) {
 				list.add(randomInt);
 			}
@@ -457,7 +462,6 @@ public class Utility {
 		boolean flag = false;
 
 		for (int i = 0; i < changeArray.length; i++) {
-
 			if ((change / changeArray[i]) > 0) {
 				notes = change / changeArray[i];
 				change = change % changeArray[i];
@@ -615,7 +619,6 @@ public class Utility {
 
 				if (integer % 2 != 0)
 					return false;
-
 				integer = integer / 2;
 			}
 			return true;
@@ -672,6 +675,7 @@ public class Utility {
 			bw.flush();
 			bw.close();
 		} catch (Exception e) {
+
 			System.out.print(e.toString());
 		}
 	}
@@ -724,7 +728,6 @@ public class Utility {
 
 		return String.valueOf(charArray);
 	}
-
 	/**
 	 * function to generate permutation of string
 	 * 
@@ -772,7 +775,7 @@ public class Utility {
 		pw.flush();
 		pw.close();
 	}
-
+	
 	/**
 	 * function to display the tic-tac-toe board
 	 * 
@@ -826,6 +829,7 @@ public class Utility {
 		return false;
 	}
 
+
 	/**
 	 * function to check if the player wins diagonally
 	 * 
@@ -858,6 +862,7 @@ public class Utility {
 			return false;
 		return true;
 	}
+
 
 	/**
 	 * function to get the number of binary search tree for a given number
