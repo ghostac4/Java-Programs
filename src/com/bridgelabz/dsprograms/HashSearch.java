@@ -40,10 +40,11 @@ public class HashSearch
       }
 
       do {
-         System.out.print("\nEnter the choice : 1.Add Number to Slot.");
-         System.out.print("\n                   2.Search Number.");
-         System.out.print("\n                   3.Display.");
-         System.out.print("\n                   4.Quit.");
+         System.out.print("\n                 : 1.Add Number to Slot.");
+         System.out.print("\n                 : 2.Search Number.");
+         System.out.print("\n                 : 3.Display.");
+         System.out.print("\n                 : 4.Quit.");
+         System.out.print("\nEnter your Choice: ");
          choice = utility.readInt();
          switch (choice) {
          case 1:

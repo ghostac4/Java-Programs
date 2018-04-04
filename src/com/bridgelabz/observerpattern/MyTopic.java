@@ -10,6 +10,9 @@ public class MyTopic implements Subject
    private String message;
    private boolean changed;
 
+   /**
+    * constructor for MyTopic class
+    */
    public MyTopic()
    {
       observers = new ArrayList<Observer>();

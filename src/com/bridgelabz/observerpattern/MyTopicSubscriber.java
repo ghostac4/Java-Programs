@@ -6,6 +6,10 @@ public class MyTopicSubscriber implements Observer
    private String name;
    private Subject topic;
 
+   /**
+    * constructor for MyTopicSubscriber class
+    * @param name
+    */
    public MyTopicSubscriber(String name)
    {
       this.name = name;

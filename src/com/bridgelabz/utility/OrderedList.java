@@ -14,6 +14,9 @@ public class OrderedList<T extends Comparable<T>>
    private HeadNode<T> headNode;
    private int sizeCount;
 
+   /**
+    * constructor for OrderedList class
+    */
    public OrderedList()
    {
       headNode = new HeadNode<>();

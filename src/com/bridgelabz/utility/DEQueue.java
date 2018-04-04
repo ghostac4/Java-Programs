@@ -16,6 +16,9 @@ public class DEQueue<T>
    private HeadDENode<T> rear;
    private int sizeCount = 0;
 
+   /**
+    * constructor for DEQueue class
+    */
    public DEQueue()
    {
       front = new HeadDENode<>();

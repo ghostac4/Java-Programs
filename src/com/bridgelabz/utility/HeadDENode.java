@@ -13,11 +13,21 @@ public class HeadDENode<T>
 
    private DENode<T> firstNode;
 
+   /**
+    * function to set first node
+    * 
+    * @param firstNode is a DENode<T>
+    */
    public void setFirstNode(DENode<T> firstNode)
    {
       this.firstNode = firstNode;
    }
 
+   /**
+    * function to get first node
+    * 
+    * @return first is a DENode<T>
+    */
    public DENode<T> getFirstNode()
    {
       return firstNode;

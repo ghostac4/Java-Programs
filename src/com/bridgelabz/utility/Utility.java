@@ -61,13 +61,10 @@ public class Utility
    }
 
    /**
-    * function to detect if the given strings are anagram or not <<<<<<< HEAD
+    * function to detect if the given strings are anagram or not
     * 
     * @param string1 is a string
-    * @param string2 is a string =======
-    * @param string1 is a string
-    * @param string2 is a string >>>>>>>
-    *           6ff2e49dee84fda0207c9e636b33c60a3647c493
+    * @param string2 is a string
     * @return true if strings are anagram else false
     * 
     */

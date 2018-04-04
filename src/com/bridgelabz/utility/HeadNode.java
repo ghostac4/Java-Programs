@@ -12,11 +12,21 @@ public class HeadNode<T>
 {
    private Node<T> firstNode;
 
+   /**
+    * function to set first node
+    * 
+    * @param firstNode is a Node<T>
+    */
    public void setFirstNode(Node<T> firstNode)
    {
       this.firstNode = firstNode;
    }
 
+   /**
+    * function to get first node
+    * 
+    * @return firstNode is a Node<T>
+    */
    public Node<T> getFirstNode()
    {
       return firstNode;
