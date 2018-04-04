@@ -1,20 +1,29 @@
-package com.bridgelab.ooprograms;
+package com.bridgelabz.ooprograms;
 
-public class Transaction {
+public class Transaction
+{
 
-	private String mode;
-	private String symbol;
-	public String getMode() {
-		return mode;
-	}
-	public void setMode(String mode) {
-		this.mode = mode;
-	}
-	public String getSymbol() {
-		return symbol;
-	}
-	public void setSymbol(String symbol) {
-		this.symbol = symbol;
-	}
-	
+   private String mode;
+   private String symbol;
+
+   public String getMode()
+   {
+      return mode;
+   }
+
+   public void setMode(String mode)
+   {
+      this.mode = mode;
+   }
+
+   public String getSymbol()
+   {
+      return symbol;
+   }
+
+   public void setSymbol(String symbol)
+   {
+      this.symbol = symbol;
+   }
+
 }

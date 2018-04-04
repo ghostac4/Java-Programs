@@ -1,28 +1,39 @@
-package com.bridgelab.designpattern.structuraldesignpatterns;
+package com.bridgelabz.adapterpattern;
 
-public class SocketObjectAdapterImpl implements SocketAdapter{
+public class SocketObjectAdapterImpl implements SocketAdapter
+{
 
-	Socket socket = new Socket();
-	
-	@Override
-	public Volt get120Volt() {
-		Volt volt = socket.getVolt();
-		return volt;
-	}
+   Socket socket = new Socket();
 
-	@Override
-	public Volt get12Volt() {
-		Volt volt = socket.getVolt();
-		return convertTo(volt, 10);
-	}
+   @Override
+   public Volt get120Volt()
+   {
+      Volt volt = socket.getVolt();
+      return volt;
+   }
 
-	@Override
-	public Volt get3Volt() {
-		Volt volt = socket.getVolt();
-		return convertTo(volt, 40);
-	}
+   @Override
+   public Volt get12Volt()
+   {
+      Volt volt = socket.getVolt();
+      return convertTo(volt, 10);
+   }
 
-	private Volt convertTo(Volt volt, int i){
-		return new Volt(volt.getVolts()/i);
-	}
+   @Override
+   public Volt get3Volt()
+   {
+      Volt volt = socket.getVolt();
+      return convertTo(volt, 40);
+   }
+
+   /**
+    * function to convert volts
+    * @param volt is Volt class 
+    * @param i is a number
+    * @return Volt object
+    */
+   private Volt convertTo(Volt volt, int i)
+   {
+      return new Volt(volt.getVolts() / i);
+   }
 }

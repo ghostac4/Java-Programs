@@ -7,7 +7,7 @@
  * @since 24-03-2018
  */
 
-package com.bridgelab.designpattern.creationaldesignpatterns;
+package com.bridgelabz.singletonpattern;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -18,22 +18,24 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 
-public class SingletonSerializedTest {
+public class SingletonSerializedTest
+{
 
-	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
-		SerializedSingleton serializedSingleton = SerializedSingleton.getIntance();
+   public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException
+   {
+      SerializedSingleton serializedSingleton = SerializedSingleton.getIntance();
 
-		ObjectOutput objectOutput = new ObjectOutputStream(new FileOutputStream("objectserialized.ser"));
-		objectOutput.writeObject(serializedSingleton);
-		objectOutput.flush();
-		objectOutput.close();
+      ObjectOutput objectOutput = new ObjectOutputStream(new FileOutputStream("objectserialized.ser"));
+      objectOutput.writeObject(serializedSingleton);
+      objectOutput.flush();
+      objectOutput.close();
 
-		ObjectInput objectInput = new ObjectInputStream(new FileInputStream("objectserialized.ser"));
-		SerializedSingleton serializedSingleton2 = (SerializedSingleton) objectInput.readObject();
-		objectInput.close();
-		
-		System.out.print("\n"+serializedSingleton.hashCode());
-		System.out.print("\n"+serializedSingleton2.hashCode());
-	}
+      ObjectInput objectInput = new ObjectInputStream(new FileInputStream("objectserialized.ser"));
+      SerializedSingleton serializedSingleton2 = (SerializedSingleton) objectInput.readObject();
+      objectInput.close();
+
+      System.out.print("\n" + serializedSingleton.hashCode());
+      System.out.print("\n" + serializedSingleton2.hashCode());
+   }
 
 }

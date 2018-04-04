@@ -6,23 +6,25 @@
  * @version 1.0
  * @since 20-03-2018
  */
-package com.bridgelab.dsprograms;
+package com.bridgelabz.dsprograms;
 
-import com.bridgelab.utility.Utility;
+import com.bridgelabz.utility.Utility;
 
-public class NumberOfBST {
+public class NumberOfBST
+{
 
-	public static void main(String[] args) {
-		Utility utility = new Utility();
-		System.out.print("\nEnter the number of test cases :");
-		int testCases = utility.readInt();
-		System.out.print("\nEnter the numbers : ");
-		int[] numbers = new int[testCases];
-		
-		for (int i = 0; i < testCases; i++)
-			numbers[i] = utility.readInt();
+   public static void main(String[] args)
+   {
+      Utility utility = new Utility();
+      System.out.print("\nEnter the number of test cases :");
+      int testCases = utility.readInt();
+      System.out.print("\nEnter the numbers : ");
+      int[] numbers = new int[testCases];
 
-		for (int i = 0; i < testCases; i++)
-			System.out.print("\n" + Utility.getNumberOfBST(numbers[i]));
-	}
+      for (int i = 0; i < testCases; i++)
+         numbers[i] = utility.readInt();
+
+      for (int i = 0; i < testCases; i++)
+         System.out.print("\n" + Utility.getNumberOfBST(numbers[i]));
+   }
 }

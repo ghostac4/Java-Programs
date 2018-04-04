@@ -1,15 +1,18 @@
-package com.bridgelab.designpattern.structuraldesignpatterns;
+package com.bridgelabz.facadepattern;
 
-public class IPhone implements MobileShop{
+public class IPhone implements MobileShop
+{
 
-	@Override
-	public void mobileNo() {
-		System.out.print("\nIPhone X");
-	}
+   @Override
+   public void mobileNo()
+   {
+      System.out.print("\nIPhone X");
+   }
 
-	@Override
-	public void price() {
-		System.out.print("\nRs.90,000");
-	}
+   @Override
+   public void price()
+   {
+      System.out.print("\nRs.90,000");
+   }
 
 }

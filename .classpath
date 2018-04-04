@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-<<<<<<< HEAD
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="lib" path="/home/bridgeit/Downloads/json-simple-1.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-=======
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/home/bridgeit/Downloads/AC/json-simple-1.1.1.jar"/>
->>>>>>> 6ff2e49dee84fda0207c9e636b33c60a3647c493
+	<classpathentry kind="lib" path="/home/bridgeit/Desktop/Java Programs/Java-Programs/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

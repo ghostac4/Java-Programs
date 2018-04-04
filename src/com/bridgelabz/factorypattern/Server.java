@@ -1,30 +1,35 @@
-package com.bridgelab.designpattern.creationaldesignpatterns;
+package com.bridgelabz.factorypattern;
 
-public class Server extends Computer{
+public class Server extends Computer
+{
 
-	private String RAM;
-	private String HDD;
-	private String CPU;
-	
-	public Server(String RAM,String HDD,String CPU){
-		this.RAM = RAM;
-		this.CPU=CPU;
-		this.HDD= HDD;
-	}
-	
-	@Override
-	public String getRAM() {
-		return RAM;
-	}
+   private String RAM;
+   private String HDD;
+   private String CPU;
 
-	@Override
-	public String getHDD() {
-		return HDD;
-	}
+   public Server(String RAM, String HDD, String CPU)
+   {
+      this.RAM = RAM;
+      this.CPU = CPU;
+      this.HDD = HDD;
+   }
 
-	@Override
-	public String getCPU() { 
-		return CPU;
-	}
+   @Override
+   public String getRAM()
+   {
+      return RAM;
+   }
+
+   @Override
+   public String getHDD()
+   {
+      return HDD;
+   }
+
+   @Override
+   public String getCPU()
+   {
+      return CPU;
+   }
 
 }

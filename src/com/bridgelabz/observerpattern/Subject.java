@@ -1,11 +1,13 @@
-package com.bridgelab.designpattern.behavioraldesignpatterns;
+package com.bridgelabz.observerpattern;
 
-public interface Subject {
+public interface Subject
+{
 
-	public void register(Observer obj);
-	public void unregister(Observer obj);
-	
-	public void notifyObservers();
-	
-	public Object getUpdate(Observer obj);	
+   public void register(Observer obj);
+
+   public void unregister(Observer obj);
+
+   public void notifyObservers();
+
+   public Object getUpdate(Observer obj);
 }

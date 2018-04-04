@@ -1,12 +1,14 @@
-package com.bridgelab.designpattern.creationaldesignpatterns;
+package com.bridgelabz.factorypattern;
 
-public class ComputerFactory {
+public class ComputerFactory
+{
 
-	public static Computer getComputer(String type,String RAM,String HDD,String CPU){
-		if(type.equalsIgnoreCase("PC"))
-			return new PC(RAM, HDD, CPU);
-		if(type.equalsIgnoreCase("SERVER"))
-			return new Server(RAM, HDD, CPU);
-		return null;
-	}
+   public static Computer getComputer(String type, String RAM, String HDD, String CPU)
+   {
+      if (type.equalsIgnoreCase("PC"))
+         return new PC(RAM, HDD, CPU);
+      if (type.equalsIgnoreCase("SERVER"))
+         return new Server(RAM, HDD, CPU);
+      return null;
+   }
 }

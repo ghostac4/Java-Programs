@@ -6,19 +6,21 @@
  * @version 1.0
  * @since 20-03-2018
  */
-package com.bridgelab.algorithmprograms;
+package com.bridgelabz.algorithmprograms;
 
-import com.bridgelab.utility.Utility;
+import com.bridgelabz.utility.Utility;
 
-public class MonthlyPayment {
+public class MonthlyPayment
+{
 
-	public static void main(String[] args) {
+   public static void main(String[] args)
+   {
 
-		float principal = Float.parseFloat(args[0]);
-		float year = Float.parseFloat(args[1]);
-		float rate = Float.parseFloat(args[2]);
+      float principal = Float.parseFloat(args[0]);
+      float year = Float.parseFloat(args[1]);
+      float rate = Float.parseFloat(args[2]);
 
-		System.out.println(Utility.monthlyPayment(principal, year, rate));
-	}
+      System.out.println(Utility.monthlyPayment(principal, year, rate));
+   }
 
 }

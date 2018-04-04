@@ -1,8 +1,9 @@
-package com.bridgelab.designpattern.behavioraldesignpatterns;
+package com.bridgelabz.observerpattern;
 
-public interface Observer {
+public interface Observer
+{
 
-	public void update();
-	
-	public void setSubject(Subject sub);
+   public void update();
+
+   public void setSubject(Subject sub);
 }

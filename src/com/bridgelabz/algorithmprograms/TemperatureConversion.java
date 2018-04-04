@@ -5,9 +5,9 @@
  * @version 1.0
  * @since 20-03-2018
  */
-package com.bridgelab.algorithmprograms;
+package com.bridgelabz.algorithmprograms;
 
-import com.bridgelab.utility.Utility;
+import com.bridgelabz.utility.Utility;
 
 public class TemperatureConversion {
 

@@ -1,26 +1,30 @@
-package com.bridgelab.designpattern.behavioraldesignpatterns;
+package com.bridgelabz.observerpattern;
 
-public class MyTopicSubscriber implements Observer{
+public class MyTopicSubscriber implements Observer
+{
 
-	private String name;
-	private Subject topic;
-	
-	public MyTopicSubscriber(String name) {
-		this.name = name;
-	}
-	
-	@Override
-	public void update() {
-		String message = (String) topic.getUpdate(this);
-		if(message == null)
-			System.out.println(name+":: No new message");
-		else
-			System.out.println(name+":: Message::"+message);
-	}
+   private String name;
+   private Subject topic;
 
-	@Override
-	public void setSubject(Subject sub) {
-		this.topic = sub;
-	}
+   public MyTopicSubscriber(String name)
+   {
+      this.name = name;
+   }
+
+   @Override
+   public void update()
+   {
+      String message = (String) topic.getUpdate(this);
+      if (message == null)
+         System.out.println(name + ":: No new message");
+      else
+         System.out.println(name + ":: Message::" + message);
+   }
+
+   @Override
+   public void setSubject(Subject sub)
+   {
+      this.topic = sub;
+   }
 
 }

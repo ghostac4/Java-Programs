@@ -1,6 +1,7 @@
-package com.bridgelab.designpattern.behavioraldesignpatterns;
+package com.bridgelabz.visitorpattern;
 
-public interface ItemElement {
+public interface ItemElement
+{
 
-	public int accept(ShoppingCartVisitor shoppingCartVisitor);
+   public int accept(ShoppingCartVisitor shoppingCartVisitor);
 }

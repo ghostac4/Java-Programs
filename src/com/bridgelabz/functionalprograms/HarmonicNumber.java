@@ -6,27 +6,29 @@
  * @since 12-03-2018
  */
 
-package com.bridgelab.functionalprograms;
+package com.bridgelabz.functionalprograms;
 
-import com.bridgelab.utility.Utility;
+import com.bridgelabz.utility.Utility;
 
-public class HarmonicNumber {
+public class HarmonicNumber
+{
 
-	public static void main(String args[]) {
-		Utility utility = new Utility();
+   public static void main(String args[])
+   {
+      Utility utility = new Utility();
 
-		int number;
-		float harmonicValue = 0.0f;
+      int number;
+      float harmonicValue = 0.0f;
 
-		do {
-			System.out.println("Enter Number :");
-			number = utility.readInt();
-		} while (number == 0);
+      do {
+         System.out.println("Enter Number :");
+         number = utility.readInt();
+      } while (number == 0);
 
-		//Calculates harmonic value for number
-		for (int i = 1; i <= number; i++)
-			harmonicValue = harmonicValue + (1.0f / i);
+      // Calculates harmonic value for number
+      for (int i = 1; i <= number; i++)
+         harmonicValue = harmonicValue + (1.0f / i);
 
-		System.out.println("Harmonic Value of " + number + " : " + harmonicValue);
-	}
+      System.out.println("Harmonic Value of " + number + " : " + harmonicValue);
+   }
 }

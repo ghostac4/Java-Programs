@@ -1,7 +1,10 @@
-package com.bridgelab.designpattern.structuraldesignpatterns;
 
-public interface MobileShop {
+package com.bridgelabz.facadepattern;
 
-	public void mobileNo();
-	public void price();
+public interface MobileShop
+{
+
+   public void mobileNo();
+
+   public void price();
 }

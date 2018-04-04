@@ -1,20 +1,24 @@
-package com.bridgelab.designpattern.creationaldesignpatterns;
+package com.bridgelabz.singletonpattern;
 
-public class ThreadSafeSingleton {
+public class ThreadSafeSingleton
+{
 
-	private static ThreadSafeSingleton threadSafeSingleton;
-	
-	private ThreadSafeSingleton(){}
-	
-	public static ThreadSafeSingleton getIntance(){
-		if(threadSafeSingleton==null){
-			synchronized (ThreadSafeSingleton.class) {
-				if(threadSafeSingleton==null){
-					threadSafeSingleton = new ThreadSafeSingleton();
-				}
-			}
-		}
-		return threadSafeSingleton;
-	}
-	
+   private static ThreadSafeSingleton threadSafeSingleton;
+
+   private ThreadSafeSingleton()
+   {
+   }
+
+   public static ThreadSafeSingleton getIntance()
+   {
+      if (threadSafeSingleton == null) {
+         synchronized (ThreadSafeSingleton.class) {
+            if (threadSafeSingleton == null) {
+               threadSafeSingleton = new ThreadSafeSingleton();
+            }
+         }
+      }
+      return threadSafeSingleton;
+   }
+
 }

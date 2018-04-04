@@ -1,23 +1,32 @@
-package com.bridgelab.dsprograms;
+package com.bridgelabz.dsprograms;
 
-public class WeekDay {
+public class WeekDay
+{
 
-	private String day;
-	private String date;
+   private String day;
+   private String date;
 
-	public String getDay() {
-		return day;
-	}
+   /**
+    * function to get days
+    * @return String day
+    */
+   public String getDay()
+   {
+      return day;
+   }
 
-	public void setDay(String day) {
-		this.day = day;
-	}
+   public void setDay(String day)
+   {
+      this.day = day;
+   }
 
-	public String getDate() {
-		return date;
-	}
+   public String getDate()
+   {
+      return date;
+   }
 
-	public void setDate(String date) {
-		this.date = date;
-	}
+   public void setDate(String date)
+   {
+      this.date = date;
+   }
 }

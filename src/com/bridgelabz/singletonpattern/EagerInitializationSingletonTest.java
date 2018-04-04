@@ -7,19 +7,21 @@
  * @since 24-03-2018
  */
 
-package com.bridgelab.designpattern.creationaldesignpatterns;
+package com.bridgelabz.singletonpattern;
 
-public class EagerInitializationSingletonTest {
+public class EagerInitializationSingletonTest
+{
 
-	public static void main(String[] args) {
-		EagerInitializationSingleton eagerInitializationSingleton1 = EagerInitializationSingleton.getInstance();
-		
-		EagerInitializationSingleton eagerInitializationSingleton2 = EagerInitializationSingleton.getInstance();
-		
-		if(eagerInitializationSingleton1.hashCode() == eagerInitializationSingleton2.hashCode())
-			System.out.print("\nSimilar instance");
-		else
-			System.out.print("\nDifferent Instance");
-	}
+   public static void main(String[] args)
+   {
+      EagerInitializationSingleton eagerInitializationSingleton1 = EagerInitializationSingleton.getInstance();
+
+      EagerInitializationSingleton eagerInitializationSingleton2 = EagerInitializationSingleton.getInstance();
+
+      if (eagerInitializationSingleton1.hashCode() == eagerInitializationSingleton2.hashCode())
+         System.out.print("\nSimilar instance");
+      else
+         System.out.print("\nDifferent Instance");
+   }
 
 }

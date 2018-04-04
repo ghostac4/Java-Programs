@@ -1,7 +1,9 @@
-package com.bridgelab.designpattern.behavioraldesignpatterns;
+package com.bridgelabz.visitorpattern;
 
-public interface ShoppingCartVisitor {
+public interface ShoppingCartVisitor
+{
 
-	int visit(Book book);
-	int visit(Fruit fruit);
+   int visit(Book book);
+
+   int visit(Fruit fruit);
 }

@@ -1,5 +1,3 @@
-package com.bridgelab.utility;
-
 /**
  * Purpose : Head node class for double ended queue
  * 
@@ -8,15 +6,20 @@ package com.bridgelab.utility;
  * @since 20-03-2018
  * @param <T> is a generic type
  */
-public class HeadDENode<T> {
+package com.bridgelabz.utility;
 
-	private DENode<T> firstNode;
-	
-	public void setFirstNode(DENode<T> firstNode){
-		this.firstNode = firstNode;
-	}
-	
-	public DENode<T> getFirstNode(){
-		return firstNode;
-	}
+public class HeadDENode<T>
+{
+
+   private DENode<T> firstNode;
+
+   public void setFirstNode(DENode<T> firstNode)
+   {
+      this.firstNode = firstNode;
+   }
+
+   public DENode<T> getFirstNode()
+   {
+      return firstNode;
+   }
 }

@@ -6,24 +6,26 @@
  * @since 13-03-2018
  */
 
-package com.bridgelab.functionalprograms;
+package com.bridgelabz.functionalprograms;
 
-import com.bridgelab.utility.Utility;
+import com.bridgelabz.utility.Utility;
 
-public class Factors {
+public class Factors
+{
 
-	public static void main(String args[]) {
+   public static void main(String args[])
+   {
 
-		Utility utility = new Utility();
-		System.out.println("Enter the number :");
+      Utility utility = new Utility();
+      System.out.println("Enter the number :");
 
-		int number = utility.readInt();
+      int number = utility.readInt();
 
-		for (int i = 2; i * i <= number; i++) {
+      for (int i = 2; i * i <= number; i++) {
 
-			if (number % i == 0)
-				if (Utility.isPrime(i))
-					System.out.println(i);
-		}
-	}
+         if (number % i == 0)
+            if (Utility.isPrime(i))
+               System.out.println(i);
+      }
+   }
 }

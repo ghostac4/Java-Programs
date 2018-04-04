@@ -7,19 +7,21 @@
  * @since 24-03-2018
  */
 
-package com.bridgelab.designpattern.creationaldesignpatterns;
+package com.bridgelabz.singletonpattern;
 
-public class ThreadSafeSingletonTest {
+public class ThreadSafeSingletonTest
+{
 
-	public static void main(String[] args) {
-		ThreadSafeSingleton threadSafeSingleton1 = ThreadSafeSingleton.getIntance();
-		
-		ThreadSafeSingleton threadSafeSingleton2 = ThreadSafeSingleton.getIntance();
-		
-		if(threadSafeSingleton1.hashCode() == threadSafeSingleton2.hashCode())
-			System.out.print("\nSimilar instance");
-		else
-			System.out.print("\nDifferent instance");
-	}
+   public static void main(String[] args)
+   {
+      ThreadSafeSingleton threadSafeSingleton1 = ThreadSafeSingleton.getIntance();
+
+      ThreadSafeSingleton threadSafeSingleton2 = ThreadSafeSingleton.getIntance();
+
+      if (threadSafeSingleton1.hashCode() == threadSafeSingleton2.hashCode())
+         System.out.print("\nSimilar instance");
+      else
+         System.out.print("\nDifferent instance");
+   }
 
 }

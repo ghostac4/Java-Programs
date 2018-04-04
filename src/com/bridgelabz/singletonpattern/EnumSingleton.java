@@ -1,16 +1,18 @@
-package com.bridgelab.designpattern.creationaldesignpatterns;
+package com.bridgelabz.singletonpattern;
 
 public enum EnumSingleton {
-	INSTANCE;
-	
-	int value;
-	
-	public int 	getValue(){
-		return value;
-	}
-	
-	public void setValue(int value){
-		this.value = value;
-	}
-	
+   INSTANCE;
+
+   int value;
+
+   public int getValue()
+   {
+      return value;
+   }
+
+   public void setValue(int value)
+   {
+      this.value = value;
+   }
+
 }

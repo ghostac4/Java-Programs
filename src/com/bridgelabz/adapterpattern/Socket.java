@@ -1,8 +1,22 @@
-package com.bridgelab.designpattern.structuraldesignpatterns;
+/**
+ * Purpose : Class Socket for Adapter Design pattern
+ * 
+ * @author Aniket Chile
+ * @version 1.0
+ * @since 23-03-2018
+ */
+package com.bridgelabz.adapterpattern;
 
-public class Socket {
+public class Socket
+{
 
-	public Volt getVolt(){
-		return new Volt(120);
-	}
+   /**
+    * getter function to get volt
+    * 
+    * @return
+    */
+   public Volt getVolt()
+   {
+      return new Volt(120);
+   }
 }

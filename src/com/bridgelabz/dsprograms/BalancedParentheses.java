@@ -6,33 +6,35 @@
  * @version 1.0
  * @since 20-03-2018
  */
-package com.bridgelab.dsprograms;
+package com.bridgelabz.dsprograms;
 
-import com.bridgelab.utility.Stack;
-import com.bridgelab.utility.Utility;
+import com.bridgelabz.utility.Stack;
+import com.bridgelabz.utility.Utility;
 
-public class BalancedParentheses {
+public class BalancedParentheses
+{
 
-	public static void main(String[] args) {
-		Stack<String> stack = new Stack<>();
-		Utility utility = new Utility();
-		
-		System.out.println("Enter the arithmetic expression :");
-		String expression = utility.readLine();
-		
-		for (int i = 0; i < expression.length(); i++) {
-			
-			if (expression.charAt(i) == '(')
-				stack.push(')' + "");
-			else if (expression.charAt(i) == ')')
-				if(stack.pop()==null){
-					System.out.println("false");
-					return;
-				}
-		}
-		
-		System.out.println(stack.isEmpty());
+   public static void main(String[] args)
+   {
+      Stack<String> stack = new Stack<>();
+      Utility utility = new Utility();
 
-	}
+      System.out.println("Enter the arithmetic expression :");
+      String expression = utility.readLine();
+
+      for (int i = 0; i < expression.length(); i++) {
+
+         if (expression.charAt(i) == '(')
+            stack.push(')' + "");
+         else if (expression.charAt(i) == ')')
+            if (stack.pop() == null) {
+               System.out.println("false");
+               return;
+            }
+      }
+
+      System.out.println(stack.isEmpty());
+
+   }
 
 }
