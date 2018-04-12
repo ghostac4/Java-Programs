@@ -124,9 +124,7 @@ public class DEQueue<T>
     */
    public boolean isEmpty()
    {
-      if (front.getFirstNode() == null && rear.getFirstNode() == null)
-         return true;
-      return false;
+      return (front.getFirstNode() == null && rear.getFirstNode() == null);
    }
 
    /**

@@ -26,11 +26,10 @@ public class BalancedParentheses
 
          if (expression.charAt(i) == '(')
             stack.push(')' + "");
-         else if (expression.charAt(i) == ')')
-            if (stack.pop() == null) {
-               System.out.println("false");
-               return;
-            }
+         else if (expression.charAt(i) == ')' && stack.pop() == null) {
+            System.out.println("false");
+            return;
+         } 
       }
 
       System.out.println(stack.isEmpty());

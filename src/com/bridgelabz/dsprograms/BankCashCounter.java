@@ -54,6 +54,7 @@ public class BankCashCounter
                queue.enqueue(0 - utility.readInt());
                break;
             default : System.out.print("\nInvalid Choice!!!");
+            break;
             }
             break;
          case 2:

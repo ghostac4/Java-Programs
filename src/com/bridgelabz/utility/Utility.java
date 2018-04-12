@@ -72,7 +72,8 @@ public class Utility
    {
       String[] string1Strings = string1.split(" ");
       String[] string2Strings = string2.split(" ");
-      String tempString1 = "", tempString2 = "";
+      String tempString1 = "";
+      String tempString2 = "";
 
       for (String string : string1Strings)
          tempString1 += string;
@@ -453,11 +454,12 @@ public class Utility
    {
       int notes = 0;
       boolean flag = false;
-
+      int tempChange = change;
+      
       for (int i = 0; i < changeArray.length; i++) {
-         if ((change / changeArray[i]) > 0) {
-            notes = change / changeArray[i];
-            change = change % changeArray[i];
+         if ((tempChange / changeArray[i]) > 0) {
+            notes = tempChange / changeArray[i];
+            tempChange = tempChange % changeArray[i];
             changeCounts[i] = changeCounts[i] + notes;
             flag = true;
             break;
@@ -465,7 +467,7 @@ public class Utility
       }
 
       if (flag)
-         getChange(change, changeCounts, changeArray);
+         getChange(tempChange, changeCounts, changeArray);
    }
 
    /**
@@ -567,12 +569,13 @@ public class Utility
    public static String toBinaryNumber(int number)
    {
       String binary = "";
-      if ((number / 2) == 0 && (number % 2) == 1) {
+      int tempNumber = number;
+      if ((tempNumber / 2) == 0 && (tempNumber % 2) == 1) {
          return binary + 1;
       } else {
-         int bit = number % 2;
-         number = number / 2;
-         binary = toBinaryNumber(number) + bit;
+         int bit = tempNumber % 2;
+         tempNumber = tempNumber / 2;
+         binary = toBinaryNumber(tempNumber) + bit;
          return binary;
       }
    }
@@ -598,15 +601,16 @@ public class Utility
     */
    public static boolean isPowerOfTwo(int integer)
    {
-      if (integer == 0)
+      int tempInteger = integer;
+      if (tempInteger == 0)
          return false;
       else {
 
-         while (integer != 1) {
+         while (tempInteger != 1) {
 
-            if (integer % 2 != 0)
+            if (tempInteger % 2 != 0)
                return false;
-            integer = integer / 2;
+            tempInteger = tempInteger / 2;
          }
          return true;
       }

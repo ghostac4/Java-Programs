@@ -30,7 +30,7 @@ public class CommandExecutorProxy implements CommandExecutor
          executor.runCommand(command);
       else {
          if (command.trim().startsWith("rm"))
-            throw new Exception("rm command is not allowed for non-admin users.");
+            System.out.print("\nrm command is not allowed for non-admin users.");
          else
             executor.runCommand(command);
       }

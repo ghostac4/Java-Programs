@@ -78,9 +78,7 @@ public class Queue<T>
     */
    public boolean isEmpty()
    {
-      if (rear.getFirstNode() == null && rear.getFirstNode() == null)
-         return true;
-      return false;
+      return (rear.getFirstNode() == null);
    }
 
    /**

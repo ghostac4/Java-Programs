@@ -34,9 +34,7 @@ public class CompanyShares
 
    public boolean isAvailable(int shares)
    {
-      if (this.shares < shares)
-         return false;
-      return true;
+      return (this.shares > shares);
    }
 
    public int getShares()

@@ -97,6 +97,7 @@ public class TicTacToe
                   }
                   break;
                default : System.out.print("\nInvalid Choice!!!");
+               break;
                }
             }
             switchTurn = false;

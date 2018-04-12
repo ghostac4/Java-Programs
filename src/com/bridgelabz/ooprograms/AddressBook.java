@@ -145,6 +145,7 @@ public class AddressBook
                   case 7:
                      System.out.print("\nEnter the Zipcode :");
                      person2.setZipcode(utility.readInt());
+                     break;
                   default:
                      break;
                   }
