@@ -14,9 +14,9 @@ import com.bridgelabz.utility.Utility;
 public class Stopwatch
 {
 
-   long mfirst;
-   long msecond;
-   long melapsed;
+   private long mfirst;
+   private long msecond;
+   private long melapsed;
 
    /**
     * Stores the start time
@@ -51,7 +51,7 @@ public class Stopwatch
       melapsed = msecond - mfirst;
       int seconds = (int) melapsed / 1000;
       int milli = (int) melapsed % 1000;
-      int minutes = (int) seconds / 60;
+      int minutes = seconds / 60;
       seconds = seconds % 60;
       return "Time  :      " + minutes + ":" + seconds + ":" + milli;
    }
@@ -63,13 +63,13 @@ public class Stopwatch
 
       System.out.println("Press Enter To start/Stop The stopwatch");
 
-      String enterkey = utility.readLine();
+      utility.readLine();
       Stopwatch stopwatch = new Stopwatch();
       stopwatch.start();
       System.out.println("Stopwatch Started...");
 
       System.out.println("Press Enter To Stop The stopwatch");
-      enterkey = utility.readLine();
+      utility.readLine();
       System.out.println("Stopwatch Stopped.");
 
       System.out.println("*******Time*******");

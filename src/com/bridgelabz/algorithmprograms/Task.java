@@ -10,9 +10,9 @@ package com.bridgelabz.algorithmprograms;
 public class Task implements Comparable<Task>, Cloneable
 {
 
-   int taskId;
-   int deadline;
-   int minutes;
+   private int taskId;
+   private int deadline;
+   private int minutes;
 
    public int getTaskId()
    {

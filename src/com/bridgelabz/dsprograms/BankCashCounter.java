@@ -53,6 +53,7 @@ public class BankCashCounter
                System.out.print("\n*****************************************************");
                queue.enqueue(0 - utility.readInt());
                break;
+            default : System.out.print("\nInvalid Choice!!!");
             }
             break;
          case 2:
@@ -87,7 +88,8 @@ public class BankCashCounter
             break;
          case 6:
             break;
+         default : System.out.print("\nInvalid Choice!!!");
          }
-      } while (!(choice == 6));
+      } while (choice != 6);
    }
 }

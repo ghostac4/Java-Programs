@@ -105,7 +105,7 @@ public class Queue<T>
          do {
             System.out.print(currentNode.getData() + " ");
             currentNode = currentNode.getNextNode();
-         } while (!(currentNode == rear.getFirstNode()));
+         } while (currentNode != rear.getFirstNode());
          System.out.print(currentNode.getData() + " ");
       }
    }

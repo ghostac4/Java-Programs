@@ -50,6 +50,8 @@ public class InventoryManager
             System.out.print("\nEnter the choice to get JSON String of :");
             i = utility.readInt();
             System.out.print("\nJSON String : " + inventoryList.get(i - 1).getJSONString());
+            break;
+         default : System.out.print("\nInvalid Choice!!!");
          }
       } while (choice != 3);
    }

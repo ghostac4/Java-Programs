@@ -57,6 +57,7 @@ public class AdapterPatternTest
          return socketAdapter.get12Volt();
       case 120:
          return socketAdapter.get120Volt();
+      default :
       }
       return null;
    }

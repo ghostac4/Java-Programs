@@ -32,7 +32,8 @@ public class Calender
          Arrays.fill(calenderRow, "  ");
 
       String monthString = "";
-      int monthDays = 0, days = 0;
+      int monthDays = 0;
+      int days = 0;
 
       if (month == 2)
          if (year % 4 == 0)

@@ -15,12 +15,13 @@ public class FlipCoin
    public static void main(String args[])
    {
       Utility utility = new Utility();
-      int flipNumber, countTails = 0;
+      int flipNumber;
+      int countTails = 0;
 
       do {
          System.out.println("Enter the number of times to Flip Coin (Positive Integer Only):");
          flipNumber = utility.readInt();
-      } while (!(flipNumber > 0));
+      } while (flipNumber < 0);
 
       float randomNumber;
 

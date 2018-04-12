@@ -33,7 +33,7 @@ public class UnorderedList<T>
          headNode.setFirstNode(node);
          node.setData(t);
       } else {
-         while (!(currentNode.getNextNode() == null)) {
+         while (currentNode.getNextNode() != null) {
             currentNode = currentNode.getNextNode();
          }
          Node<T> node = new Node<T>();
@@ -50,13 +50,13 @@ public class UnorderedList<T>
    public void remove(T t)
    {
       Node<T> currentNode = headNode.getFirstNode();
-      if (!(currentNode == null)) {
+      if (currentNode != null) {
          if (currentNode.getData().equals(t)) {
             currentNode.setData(null);
             headNode.setFirstNode(currentNode.getNextNode());
             currentNode.setNextNode(null);
          } else {
-            while (!(currentNode.getNextNode() == null)) {
+            while (currentNode.getNextNode() != null) {
                Node<T> previousNode = currentNode;
                currentNode = currentNode.getNextNode();
                if (currentNode.getData().equals(t)) {
@@ -78,11 +78,11 @@ public class UnorderedList<T>
    public boolean search(T t)
    {
       Node<T> currentNode = headNode.getFirstNode();
-      if (!(currentNode == null)) {
+      if (currentNode != null) {
          if (currentNode.getData().equals(t)) {
             return true;
          } else {
-            while (!(currentNode.getNextNode() == null)) {
+            while (currentNode.getNextNode() != null) {
                currentNode = currentNode.getNextNode();
                if (currentNode.getData().equals(t)) {
                   return true;
@@ -116,9 +116,9 @@ public class UnorderedList<T>
    {
       Node<T> currentNode = headNode.getFirstNode();
       int sizeCount = 0;
-      if (!(currentNode == null)) {
+      if (currentNode != null) {
          sizeCount++;
-         while (!(currentNode.getNextNode() == null)) {
+         while (currentNode.getNextNode() != null) {
             currentNode = currentNode.getNextNode();
             sizeCount++;
          }
@@ -140,7 +140,7 @@ public class UnorderedList<T>
          headNode.setFirstNode(node);
          node.setData(t);
       } else {
-         while (!(currentNode.getNextNode() == null)) {
+         while (currentNode.getNextNode() != null) {
             currentNode = currentNode.getNextNode();
          }
          Node<T> node = new Node<T>();
@@ -159,12 +159,12 @@ public class UnorderedList<T>
    {
       Node<T> currentNode = headNode.getFirstNode();
       int indexCount = -1;
-      if (!(currentNode == null)) {
+      if (currentNode != null) {
          indexCount++;
          if (currentNode.getData().equals(t)) {
             return indexCount;
          } else {
-            while (!(currentNode.getNextNode() == null)) {
+            while (currentNode.getNextNode() != null) {
                currentNode = currentNode.getNextNode();
                indexCount++;
                if (currentNode.getData().equals(t)) {
@@ -193,7 +193,7 @@ public class UnorderedList<T>
          node.setData(t);
       } else {
          int indexCount = 0;
-         while (!(position == indexCount)) {
+         while (position != indexCount) {
             currentNode = currentNode.getNextNode();
             indexCount++;
          }
@@ -219,7 +219,7 @@ public class UnorderedList<T>
          return t;
       } else {
          Node<T> previousNode = null;
-         while (!(currentNode.getNextNode() == null)) {
+         while (currentNode.getNextNode() != null) {
             previousNode = currentNode;
             currentNode = currentNode.getNextNode();
          }
@@ -248,7 +248,7 @@ public class UnorderedList<T>
       } else {
          int indexCount = 0;
          Node<T> previousNode = null;
-         while (!(position == indexCount)) {
+         while (position != indexCount) {
             previousNode = currentNode;
             currentNode = currentNode.getNextNode();
             indexCount++;
@@ -267,9 +267,9 @@ public class UnorderedList<T>
    public void display()
    {
       Node<T> currentNode = headNode.getFirstNode();
-      if (!(currentNode == null)) {
+      if (currentNode != null) {
          System.out.print(currentNode.getData() + " ");
-         while (!(currentNode.getNextNode() == null)) {
+         while (currentNode.getNextNode() != null) {
             currentNode = currentNode.getNextNode();
             System.out.print(currentNode.getData() + " ");
          }

@@ -95,7 +95,7 @@ public class OrderedList<T extends Comparable<T>>
       Node<T> currentNode = headNode.getFirstNode();
       Node<T> previouNode = null;
       int index = 1;
-      while (currentNode.getNextNode() != null && !(index == position)) {
+      while (currentNode.getNextNode() != null && index != position) {
          previouNode = currentNode;
          currentNode = currentNode.getNextNode();
       }

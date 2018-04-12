@@ -23,7 +23,8 @@ public class DeckOfCards
       String[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
 
       List<Card> cardsList = new ArrayList<>();
-      String suit = "", rank = "";
+      String suit = "";
+      String rank = "";
       for (int i = 0; i < 4; i++) {
          suit = suits[i];
 

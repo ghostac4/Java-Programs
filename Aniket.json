@@ -1,1 +1,1 @@
-{"dateTime":[{"dt":"30\/03\/2018 19:23:06"},{"dt":"30\/03\/2018 19:23:18"}],"amount":88271.65,"transactions":[{"mode":"Buy","symbol":"@"},{"mode":"Sell","symbol":"@"}],"companyShares":[{"shares":4,"symbol":"@","price":2345.67}]}
+{"dateTime":[{"dt":"30\/03\/2018 19:23:06"},{"dt":"30\/03\/2018 19:23:18"},{"dt":"12\/04\/2018 12:55:08"}],"amount":68468.0,"transactions":[{"mode":"Buy","symbol":"@"},{"mode":"Sell","symbol":"@"},{"mode":"Buy","symbol":"#"}],"companyShares":[{"shares":61,"symbol":"#","price":324.65},{"shares":4,"symbol":"@","price":2345.67}]}

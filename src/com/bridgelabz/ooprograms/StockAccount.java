@@ -66,7 +66,7 @@ public class StockAccount
             int shares = (int) (amount / cShares.getPrice());
             if (cShares.isAvailable(shares)) {
                cShares.setShares(cShares.getShares() - shares);
-               ;
+               
                this.amount = this.amount - (cShares.getPrice() * shares);
 
                int size = companySharesInAccount.size();

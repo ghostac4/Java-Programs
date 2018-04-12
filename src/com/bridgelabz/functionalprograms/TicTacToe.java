@@ -20,7 +20,9 @@ public class TicTacToe
    {
       Utility utility = new Utility();
       int moves = 0;
-      boolean player1 = false, player2 = false, switchTurn = false;
+      boolean player1 = false;
+      boolean player2 = false;
+      boolean switchTurn = false;
       char[][] arr = new char[3][3];
 
       // fill the two dimensional array with '_'
@@ -94,6 +96,7 @@ public class TicTacToe
                      isEmpty = false;
                   }
                   break;
+               default : System.out.print("\nInvalid Choice!!!");
                }
             }
             switchTurn = false;

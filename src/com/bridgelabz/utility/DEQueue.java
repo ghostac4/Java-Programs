@@ -77,7 +77,6 @@ public class DEQueue<T>
    public T removeFront()
    {
       DENode<T> denode = front.getFirstNode();
-      ;
       if (front.getFirstNode() == rear.getFirstNode()) {
          front.setFirstNode(null);
          rear.setFirstNode(null);

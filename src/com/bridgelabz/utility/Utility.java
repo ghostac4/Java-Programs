@@ -89,11 +89,9 @@ public class Utility
          string1 = new String(string1chars);
          string2 = new String(string2chars);
 
-         if (string1.equals(string2)) {
+         if (string1.equals(string2))
             return true;
-         } else {
-            return false;
-         }
+         return false;
 
       } else {
          return false;
@@ -342,7 +340,8 @@ public class Utility
       for (int j = 0; j < subArrayRLength; ++j)
          subArrayR[j] = array[mid + 1 + j];
 
-      int i = 0, j = 0;
+      int i = 0;
+      int j = 0;
       int k = left;
       while (i < subArrayLLength && j < subArrayRLength) {
          if (subArrayL[i].compareTo(subArrayR[j]) < 0) {
@@ -432,19 +431,19 @@ public class Utility
     */
    public static String readFromFile(String path)
    {
-      String line = "", output = "";
-      try {
-         InputStream fis = new FileInputStream(path);
-         InputStreamReader isr = new InputStreamReader(fis);
-         BufferedReader br = new BufferedReader(isr);
+      String line = "";
+      StringBuilder output = new StringBuilder();
+      try (InputStream fis = new FileInputStream(path);
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader br = new BufferedReader(isr);) {
          while ((line = br.readLine()) != null) {
-            output = output + line;
+            output.append(line);
          }
          br.close();
       } catch (Exception e) {
          System.out.println(e.toString());
       }
-      return output;
+      return output.toString();
    }
 
    /**
@@ -825,11 +824,9 @@ public class Utility
    public static boolean checkDiag(char[][] arr, char xo)
    {
       if ((arr[0][0] == xo && arr[1][1] == xo && arr[2][2] == xo)
-            || (arr[0][2] == xo && arr[1][1] == xo && arr[2][0] == xo)) {
+            || (arr[0][2] == xo && arr[1][1] == xo && arr[2][0] == xo))
          return true;
-      } else {
-         return false;
-      }
+      return false;
    }
 
    /**
@@ -876,7 +873,8 @@ public class Utility
    {
       Collections.sort(taskList);
 
-      int index = 0, time = 1;
+      int index = 0;
+      int time = 1;
       int max = 0;
       while (!taskList.isEmpty()) {
          Task task;

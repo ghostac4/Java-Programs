@@ -8,7 +8,6 @@
 package com.bridgelabz.ooprograms;
 
 import java.io.IOException;
-
 import com.bridgelabz.utility.Utility;
 
 public class StockManager
@@ -17,7 +16,8 @@ public class StockManager
    public static void main(String[] args) throws IOException
    {
       Utility utility = new Utility();
-      int choice, amount;
+      int choice;
+      int amount;
       String symbol;
 
       do {
@@ -73,11 +73,14 @@ public class StockManager
                   break;
                case 4:
                   stockAccount2.printReport();
+                  break;
                default:
                   break;
                }
             } while (choice2 != 5);
             break;
+         case 3: break;
+         default : System.out.print("\nInvalid choice!!!");
          }
       } while (choice != 3);
    }
