@@ -23,8 +23,7 @@ public class Factors
 
       for (int i = 2; i * i <= number; i++) {
 
-         if (number % i == 0)
-            if (Utility.isPrime(i))
+         if (number % i == 0 && Utility.isPrime(i))
                System.out.println(i);
       }
    }

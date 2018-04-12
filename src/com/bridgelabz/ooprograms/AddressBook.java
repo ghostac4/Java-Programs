@@ -150,6 +150,7 @@ public class AddressBook
                   }
                }
             }
+            break;
          case 4:
             utility.readLine();
             System.out.print("\nEnter the First Name : ");
@@ -162,6 +163,7 @@ public class AddressBook
                   break;
                }
             }
+            break;
          case 5:
             JSONArray jsonArray2 = new JSONArray();
             for (Person person2 : personsList) {

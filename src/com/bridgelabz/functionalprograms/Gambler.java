@@ -31,7 +31,7 @@ public class Gambler
          int tempStake = stake;
 
          // until the player wins or lose
-         while (!(tempStake == goal) && tempStake > 0) {
+         while (tempStake != goal && tempStake > 0) {
             random = (float) Math.random();
 
             if (random < 0.5)

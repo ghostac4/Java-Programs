@@ -17,7 +17,8 @@ public class PowerOfTwo
    public static void main(String args[])
    {
       Utility utility = new Utility();
-      int number, value = 1;
+      int number;
+      int value = 1;
 
       do {
          System.out.println("Enter Number between 0 and 31 :");

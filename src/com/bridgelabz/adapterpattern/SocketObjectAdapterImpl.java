@@ -3,13 +3,12 @@ package com.bridgelabz.adapterpattern;
 public class SocketObjectAdapterImpl implements SocketAdapter
 {
 
-   Socket socket = new Socket();
+   private Socket socket = new Socket();
 
    @Override
    public Volt get120Volt()
    {
-      Volt volt = socket.getVolt();
-      return volt;
+      return socket.getVolt();
    }
 
    @Override

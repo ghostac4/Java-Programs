@@ -22,7 +22,7 @@ public class MyTopic implements Subject
    public void register(Observer obj)
    {
       if (obj == null)
-         throw new NullPointerException("Null Observer");
+         System.out.print("\nObject is Null");
       if (!observers.contains(obj))
          observers.add(obj);
    }

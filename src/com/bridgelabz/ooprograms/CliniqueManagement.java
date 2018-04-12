@@ -172,6 +172,7 @@ public class CliniqueManagement
                   }
                }
                break;
+            default : break;
             }
             System.out.print("\nDo you want to take appointment ? y/n");
             String takeAppoinment = utility.readLine();
@@ -221,6 +222,7 @@ public class CliniqueManagement
                   }
                }
                break;
+            default : break;
             }
             break;
          case 5:

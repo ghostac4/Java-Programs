@@ -34,6 +34,7 @@ public class TemperatureConversion {
 			break;
 		default:
 			System.out.println("Invalid Choice");
+			break;
 		}
 	}
 

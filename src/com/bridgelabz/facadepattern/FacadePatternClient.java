@@ -37,6 +37,7 @@ public class FacadePatternClient
             break;
          default:
             System.out.print("\nNothing is purchased!");
+            break;
          }
       } while (choice != 4);
    }

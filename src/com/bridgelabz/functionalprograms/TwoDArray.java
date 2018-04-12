@@ -55,6 +55,7 @@ public class TwoDArray
          break;
       default:
          System.out.println("Invalid Choice");
+         break;
       }
       sc.close();
    }
