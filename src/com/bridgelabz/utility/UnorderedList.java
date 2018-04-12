@@ -102,9 +102,7 @@ public class UnorderedList<T>
    public boolean isEmpty()
    {
       Node<T> currentNode = headNode.getFirstNode();
-      if (currentNode == null)
-         return true;
-      return false;
+      return currentNode == null;
    }
 
    /**

@@ -85,10 +85,7 @@ public class Stack<T>
    public boolean isEmpty()
    {
       Node<T> topNode = headNode.getFirstNode();
-      if (topNode == null)
-         return true;
-      else
-         return false;
+      return topNode == null;
    }
 
    /**

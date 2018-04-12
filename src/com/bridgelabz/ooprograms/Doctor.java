@@ -88,10 +88,8 @@ public class Doctor
 
    public boolean isAvailable()
    {
-      if (appointments.size() == 5)
-         return false;
-      else
-         return true;
+      return (appointments.size() != 5);
+         
    }
 
 }

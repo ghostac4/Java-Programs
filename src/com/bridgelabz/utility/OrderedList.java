@@ -85,9 +85,7 @@ public class OrderedList<T extends Comparable<T>>
     */
    public boolean isEmpty()
    {
-      if (headNode.getFirstNode() == null)
-         return true;
-      return false;
+      return headNode.getFirstNode() == null;
    }
 
    public T pop(int position)
@@ -207,9 +205,7 @@ public class OrderedList<T extends Comparable<T>>
                return true;
             currentNode = currentNode.getNextNode();
          }
-         if (currentNode.getData().equals(t))
-            return true;
-         return false;
+         return (currentNode.getData().equals(t));
       } else
          return false;
    }

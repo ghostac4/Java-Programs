@@ -89,10 +89,7 @@ public class Utility
          string1 = new String(string1chars);
          string2 = new String(string2chars);
 
-         if (string1.equals(string2))
-            return true;
-         return false;
-
+         return string1.equals(string2);
       } else {
          return false;
       }
@@ -823,10 +820,8 @@ public class Utility
     */
    public static boolean checkDiag(char[][] arr, char xo)
    {
-      if ((arr[0][0] == xo && arr[1][1] == xo && arr[2][2] == xo)
-            || (arr[0][2] == xo && arr[1][1] == xo && arr[2][0] == xo))
-         return true;
-      return false;
+      return ((arr[0][0] == xo && arr[1][1] == xo && arr[2][2] == xo)
+            || (arr[0][2] == xo && arr[1][1] == xo && arr[2][0] == xo));
    }
 
    /**
@@ -838,9 +833,7 @@ public class Utility
     */
    public static boolean isDistinct(List<Integer> coupons, int couponNumber)
    {
-      if (coupons.contains(couponNumber))
-         return false;
-      return true;
+      return (!coupons.contains(couponNumber));
    }
 
    /**
@@ -881,7 +874,6 @@ public class Utility
          if (taskList.size() == 1) {
             task = taskList.get(0);
             task.setMinutes(task.getMinutes() - 1);
-            // System.out.print("\nTime " + time + " : Task" + task.taskId);
             if (task.getMinutes() == 0) {
                int tempMax = time - task.getDeadline();
                if (tempMax > max)
@@ -898,8 +890,6 @@ public class Utility
                   index = 0;
                } else {
                   task.setMinutes(task.getMinutes() - 1);
-                  // System.out.print("\nTime " + time + " : Task" +
-                  // task.taskId);
                   if (task.getMinutes() == 0) {
                      int tempMax = time - task.getDeadline();
                      if (tempMax > max)
